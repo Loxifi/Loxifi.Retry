@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<PackageProjectUrl>http://loxifi.com/Projects/Loxifi.Retry</PackageProjectUrl>
+		<Version>0.8</Version>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageIcon>Properties\Icon.png</PackageIcon>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Description>
+			A micro retry policy utility
+		</Description>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageLicenseFile>Properties\License.txt</PackageLicenseFile>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/Loxifi/Loxifi.Retry.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<RootNamespace>Loxifi</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Tests\**" />
+	  <EmbeddedResource Remove="Tests\**" />
+	  <None Remove="Tests\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Properties\License.txt" Pack="true" PackagePath="Properties\License.txt" />
+		<None Include="Properties\Icon.png" Pack="true" PackagePath="Properties\Icon.png" />
+		<None Include="README.md" Pack="true" PackagePath="README.md" />
+	</ItemGroup>
+</Project>
